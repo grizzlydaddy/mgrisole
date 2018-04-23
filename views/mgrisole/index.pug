@@ -1,0 +1,143 @@
+extends layout
+
+block content
+  div(class="container")
+
+    div(class="top")
+      
+      div(class="typeMe" data-typeit="Hi ! Welcome to my workshop dude !")
+        
+    div(class="bottom desktop")
+      div(class="block")
+        div(class="title")
+          div(class="title-button")
+            | about me
+
+    div(class="bottom mobile")
+      
+      div(class="close-button")
+
+      div(class="block")
+        div(class="title")
+          div(class="title-button")
+            | about me
+            span
+        div(class="content")
+          div(class="division")
+            div(class="division__title")
+              | My front
+            div(class="division__paragraph")
+              span
+                | I dressed my Pugs with Sass and Postcss.
+                br
+                | Why ? Well, Sass helped me organized my stylesheets way better than using old Css
+                | and as for Postcss, it took care of the minifying, plus it comes with its very usefull plugin, Autoprefixer, which is a perfect crossbrowser tool.
+                br
+                | What about Pug you will ask ? Like Sass it helped me keeping a clear view on my DOM and I also love the way it fits with Express.
+          div(class="division")
+            div(class="division__title")
+              | What's in my back ?
+            div(class="division__paragraph")
+              span
+                | I'm running on node and my memories are stored inside a mongodb database !
+                br
+                | As my creator is pretty lazy, he plugged me a ton of packages to make his life way easier.
+                br
+                | It all started with Express, which is pretty obvious as he was affraid to manage the routing by himself
+                br
+                | Then he discovered Nodemon to reboot me whenever he updated a server file. This one closely followed by BrowserSync to reload his browser at every changes made on Pug, Sass and TS files.
+
+      div(class="block")
+        div(class="title")
+          div(class="title-button") 
+            | about my creator
+            span
+        div(class="content")
+          div(class="division")
+            div(class="division__title")
+              | Profile
+            div(class="division__paragraph")
+              span
+                | Hi, my name is Maxime Grisole, I'm a full time human being and also a Web Developer based 
+                | in Toulouse for the last 3 years. I really love web technologies
+                | and I keep learning new stuff every day (when it's a good one in fact). 
+                br
+                | I always try my best to figure out what are my clients needs and 
+                | priorities while keeping in mind the same for my company. And if I do so, it's mainly because 
+                | I trully prefer working with happy peoples, it makes me feel proud of what I done.
+      
+          div(class="division")
+            div(class="division__title")
+              | Things I can do
+            div(class="division__paragraph")
+              span
+                | Even though I'm not a genius, I've been smart enought to do things I like as a job.
+                br
+                | You will find bellow a list of things I can do :
+              ul(class="skills")
+                li
+                  | JavaScript / Typescript / jQuery
+                li
+                  | HTML / CSS / Sass
+                li
+                  | PHP / Symfony
+                li
+                  | MongoDB / SQL
+                li
+                  | Node
+      
+          div(class="division")
+            div(class="division__title")
+              | Experience
+            div(class="division__paragraph")
+              span
+                | 2015 - 2018 | Full Stack Developer
+                br
+                | DEVATICS - Toulouse
+                br
+                | Front and back end development
+                br
+                | Campaigns estimations, pre-sales and customer service english/french
+            div(class="division__paragraph")
+              span
+                | 04/2015 - 08/2015 | J2EE Developer
+                br
+                | ANDIL - Toulouse
+                br
+                | Internship. New features development and existing features support for a wealth management plateform.
+      
+          div(class="division")
+            div(class="division__title")
+              | Formation
+            div(class="division__paragraph")
+              span
+                | 2014 - 2015 | Licence Professionnelle RTAI
+                br
+                | Université Toulouse 1 Capitole, Toulouse
+            div(class="division__paragraph")
+              span
+                | 2013 - 2014 | BTS IRIS - Second year
+                br
+                | Lycée Heinrich Nessel, Haguenau
+            div(class="division__paragraph")
+              span
+                | 2012 - 2013 | BTS IRIS - First year
+                br
+                | Lycée Paul Vincensini, Bastia
+      
+      div(class="block")
+        div(class="title")
+          div(class="title-button") 
+            | Contact
+            span
+        div(class="content")
+          div(class="division")
+            div(class="division__title")
+              | Say hi
+            div(class="division__form")
+              span
+                form
+                  input(type="text", name="firstname" placeholder="DUPONT Louis" autocomplete="name")
+                  input(type="email", name="email" placeholder="louis.dupont@gmail.com" autocomplete="email")
+                  textarea(rows="5" cols="5" name="message" placeholder="louis.dupont@gmail.com")
+                    | Hi, my name is Maxime Grisole, I'm a full time human being and also a Web Developer based in Toulouse for the last 3 years. I really love web technologies and I keep learning new stuff every day (when it's a good one in fact).

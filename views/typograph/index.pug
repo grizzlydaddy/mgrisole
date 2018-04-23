@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  div(class="container")
+
+    div(class="top")
+      
+      div(class="typeMe" data-typeit="Hi, I'm Typograph !")
+        
+    div(class="bottom desktop")
+      div(class="block")
+        div(class="title")
+          div(class="title-button")
+            | about me
+
+    div(class="bottom mobile")
+      
+      div(class="close-button")
+
+      div(class="block")
+        div(class="title")
+          div(class="title-button")
+            | about me
+            span
+        div(class="content")
+          div(class="division")
+            div(class="division__title")
+              | My front
+            div(class="division__paragraph")
+              span
+                | I dressed my Pugs with Sass and Postcss.
+                br
+                | Why ? Well, Sass helped me organized my stylesheets way better than using old Css
+                | and as for Postcss, it took care of the minifying, plus it comes with its very usefull plugin, Autoprefixer, which is a perfect crossbrowser tool.
+                br
+                | What about Pug you will ask ? Like Sass it helped me keeping a clear view on my DOM and I also love the way it fits with Express.
+          div(class="division")
+            div(class="division__title")
+              | What's in my back ?
+            div(class="division__paragraph")
+              span
+                | I'm running on node and my memories are stored inside a mongodb database !
+                br
+                | As my creator is pretty lazy, he plugged me a ton of packages to make his life way easier.
+                br
+                | It all started with Express, which is pretty obvious as he was affraid to manage the routing by himself
+                br
+                | Then he discovered Nodemon to reboot me whenever he updated a server file. This one closely followed by BrowserSync to reload his browser at every changes made on Pug, Sass and TS files.

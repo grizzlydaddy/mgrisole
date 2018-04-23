@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["chrome >=24", "safari >= 6", "Explorer >= 10", "firefox >= 32", "Opera >= 15"]
+      }
+    }]
+  ],
+  "plugins": ["transform-runtime"]
+}
