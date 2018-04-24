@@ -7,8 +7,7 @@ const
   postcss = require('gulp-postcss'),
   webpack = require('webpack'),
   webpackStream = require('webpack-stream'),
-  browserSync = require('browser-sync'),
-  proxy = require('http-proxy-middleware');
+  browserSync = require('browser-sync');
 
 gulp.task('browser-sync', ['nodemon', 'sass', 'js'], () => {
   browserSync({
