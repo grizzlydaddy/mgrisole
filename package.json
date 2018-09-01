@@ -7,6 +7,9 @@
     "start": "node bin/www",
     "dev": "webpack --mode development --watch"
   },
+  "engines": {
+    "node": "8.11.4"
+  },
   "dependencies": {
     "animejs": "^2.2.0",
     "autosize": "^4.0.0",
